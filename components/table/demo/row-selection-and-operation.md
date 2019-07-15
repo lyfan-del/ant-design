@@ -51,9 +51,9 @@ const App = React.createClass({
     this.setState({ selectedRowKeys });
   },
   render() {
-    const { loading, selectedRowKeys } = this.state;
+    const { loading, selectedRows } = this.state;
     const rowSelection = {
-      selectedRowKeys,
+      selectedRows,
       onChange: this.onSelectChange,
     };
     const hasSelected = selectedRowKeys.length > 0;
